@@ -17,8 +17,7 @@ header {
 }
 
 .header_logo{
-    margin-left: 80px;
-    margin-top: 20px;
+    margin: 20px 420px 0 80px;
 }
 
 .menu {
@@ -28,6 +27,19 @@ header {
     margin-top: 25px;
     &_item{
         margin-right: 36px;
+        
+    }
+    &_item:nth-child(2)::after {
+        content: "\f078";
+        font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+        font-weight: 700;
+        padding-left: 9px;
+    }
+    &_item:nth-child(5)::before {
+        content: "\f002";
+        font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+        font-weight: 700;
+        padding-right: 7px;
     }
     &_link{
         color: black;
@@ -35,18 +47,25 @@ header {
 }
 
 .button_cart {
-    width: 100px;
+    width: 130px;
     height: 42px;
     border-radius: 5px;
     background-color: #fff;
     border-color: #E7E8E3;
     margin-right: 18px;
     margin-top: 17px;
+    &::before{
+        content: "\f290";
+        font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+        font-weight: 700;
+        padding-right: 8px;
+    }
+  
 }
 
 .button_find {
-    margin-right: 80px;
-    width: 159px;
+    margin-right: 50px;
+    width: 200px;
     height: 42px;
     border: none;
     background-color: #CF6F49;
@@ -65,15 +84,33 @@ header {
     background-color: #E7E8E3;
 }
 
-.wrapper_promo {
-    display: flex;
-    justify-content: space-between;
+.wrapper{
+    &_promo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .text {
-    margin: 255px 150px 155px 80px;
+    margin: 175px 80px 155px 80px;
     display: flex;
     flex-direction: column;
+    width: 560px;
+}
+
+.label {
+    width: 171px;
+    height: 29px;
+    padding-top: 4px;
+    margin-bottom: 20px;
+    border-radius: 13px;
+    background-color: #dcdcdc;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #2A2C1F;
+
 }
 
 .promo_header {
@@ -91,7 +128,16 @@ header {
     color: #65665C;
 }
 
+.icon_search::before{
+    position: absolute;
+    content: "\f002";
+    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+    font-weight: 700;
+    padding: 13px 5px 0 8px;
+}
+
 .promo_form {
+    position: relative;
     margin-top: 25px;
     input {
         width: 310px;
@@ -99,7 +145,7 @@ header {
         border-radius: 5px;
         border: 1px;
         background-color: #ffffff;
-        padding-left: 10px;
+        padding-left: 28px;
     }
 }
 
@@ -111,4 +157,8 @@ header {
     background-color: #CF6F49;
     margin-left: 10px;
     color: #fff;
+    &:hover{
+        border-color:#CF6F49;
+    }
 }
+
