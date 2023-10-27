@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -47,7 +48,7 @@ h6 {
 
 p,
 button {
-  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands"; // лучше шрифты прописывать тут чтобы не писать их каждый раз
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
 }
 
 button {
@@ -66,16 +67,13 @@ input {
   border: none;
 }
 
-//   почитай про normalize и reset css
-
 .container {
-  //   max-width: 1280px;
   margin: 0 auto;
 }
 
 header {
   /* max-height: 74px; в редких случаях тебе нужно будет задавать элементу высоту, она регулиурется внутренним контентом, поситай про блочную модель в css
- */
+  */
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -94,7 +92,6 @@ header {
 }
 
 .header_logo {
-  //   margin: 20px 420px 0 80px; так делать не надо
   width: 100%;
   max-width: 105px;
 }
@@ -103,52 +100,45 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  column-gap: 24px;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
 }
 
 .menu {
   display: flex;
-  column-gap: 34px;
+  -moz-column-gap: 34px;
+       column-gap: 34px;
   list-style-type: none;
   margin: 0;
-
-  &_item:nth-child(2)::after {
-    content: "\f078"; // icons надо качать  из макета и вставлять в html
-    font-weight: 700;
-  }
-
-  &_item:nth-child(5)::before {
-    content: "\f002"; //the same
-    font-weight: 700;
-  }
-
-  &_link {
-    color: black;
-  }
+}
+.menu_item:nth-child(2)::after {
+  content: "\f078";
+  font-weight: 700;
+}
+.menu_item:nth-child(5)::before {
+  content: "\f002";
+  font-weight: 700;
+}
+.menu_link {
+  color: black;
 }
 
 .button_cart {
-  // width: 130px; у кнопок регулируем высоту и ширину через paddings
-  // height: 42px;
   border-radius: 5px;
   background-color: #fff;
-
   border: 1px solid #e7e8e3;
-  box-shadow: 0px 2px 4px 0px #00000014;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.0784313725);
   padding: 8px 20px;
   display: flex;
-  column-gap: 8px;
-
-  &::before {
-    content: "\f290"; // the same
-    font-weight: 700;
-  }
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+.button_cart::before {
+  content: "\f290";
+  font-weight: 700;
 }
 
 .button_find {
-  // margin-right: 50px;
-  // width: 200px; the same
-  // height: 42px;
   border: none;
   background-color: #cf6f49;
   color: #fff;
@@ -157,13 +147,10 @@ nav {
   text-align: center;
   border-radius: 5px;
   padding: 10px 24px;
-  // margin-top: 17px;
 }
 
 .promo {
   width: 100%;
-  //   max-height: 686px;
-  //   margin-top: 15px;
   background-color: #e7e8e3;
   margin: 0 auto;
   display: flex;
@@ -173,28 +160,23 @@ nav {
 
 .wrapper {
   max-width: 1440px;
-
-  &_promo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+}
+.wrapper_promo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .text {
-  // margin: 175px 80px 155px 80px;
   padding: 158px 155px 158px 80px;
-  // такие падинги подойдут только для экрана 1440 и больше, для ширины меньше будеи учиться позже
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
 .label {
-  // width: 171px;
-  // height: 29px;
-  // padding-top: 4px;
   margin-bottom: 20px;
   padding: 8px 12px;
+  width: -moz-fit-content;
   width: fit-content;
   border-radius: 13px;
   background-color: #dcdcdc;
@@ -220,34 +202,25 @@ nav {
 }
 
 .icon_search::before {
-  // position: absolute; here you dont need it
-  content: "\f002"; // the same
-
+  content: "\f002";
   font-weight: 700;
 }
 
 .promo_form {
-  // position: relative; here you dont need it
   margin-top: 25px;
-  input {
-    // width: 310px;  do it with paddings as i showed
-    // height: 48px;
-    border-radius: 5px;
-    border: 1px;
-    background-color: #ffffff;
-    // padding-left: 28px;
-  }
+}
+.promo_form input {
+  border-radius: 5px;
+  border: 1px;
+  background-color: #ffffff;
 }
 
 .promo_button {
-  // width: 154px;
-  // height: 50px; the same
   border-radius: 5px;
   border: 1px;
   background-color: #cf6f49;
-  // margin-left: 10px;
   color: #fff;
-  &:hover {
-    border-color: #cf6f49;
-  }
 }
+.promo_button:hover {
+  border-color: #cf6f49;
+}/*# sourceMappingURL=style.css.map */
