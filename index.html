@@ -1,54 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>test</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-    integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    <link rel="stylesheet" href="/src/css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="src/css/style.min.css">
-    
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="src/sass/style.css" />
+  </head>
+  <body>
     <header>
-        <div class="wrapper_header">
-            <a href="#" class="header_logo">
-                <img src="/src/icons/logo.png" alt="logo">
-            </a>
-            <nav>
-                    <ul class="menu">
-                        <li class="menu_item"><a href="#" class="menu_link">Home</a></li>
-                        <li class="menu_item"><a href="#require" class="menu_link">Properties</a></li>
-                        <li class="menu_item"><a href="#require" class="menu_link">About</a></li>
-                        <li class="menu_item"><a href="#" class="menu_link">Contact</a></li>
-                        <li class="menu_item"><a href="#" class="menu_link">Search</a></li>
-                    </ul>
-            </nav>
-            <button class="button_cart">Cart</button>
-            <button class="button_find">Find a property</button>
-        </div>
+      <div class="wrapper_header">
+        <a href="#" class="header_logo">
+          <img src="/src/icons/logo.png" alt="logo" />
+        </a>
+        <nav>
+          <ul class="menu">
+            <li class="menu_item"><a href="#" class="menu_link">Home</a></li>
+            <li class="menu_item">
+              <a href="#require" class="menu_link">Properties</a>
+            </li>
+            <li class="menu_item">
+              <a href="#require" class="menu_link">About</a>
+            </li>
+            <li class="menu_item"><a href="#" class="menu_link">Contact</a></li>
+            <li><button class="menu_item">Search</button></li>
+          </ul>
+
+          <!-- в проектах serch будет или кнопка или инпут и, переделать на инпут добавь иконку -->
+          <button class="button_cart">Cart</button>
+          <button class="button_find">Find a property</button>
+        </nav>
+      </div>
     </header>
     <div class="promo">
-        <div class="wrapper_promo">
-            <div class="wrapper_text">
-                <div class="text">
-                    <div class="label">Find your dream place</div>
-                    <h1 class="promo_header">Find house for your family in minutes</h1>
-                    <div class="promo_subheader">Aenean sodales mauris quis tellus facilisis, 
-                    vel mattis <br>magna. Interdum curabitur eget aliquam 
-                    elit in mauris <br>purus.</div>
-                    <form action="#" method="get" class="promo_form">
-                        <span class="icon_search"><input name="search" placeholder="Search" type="search"></span>
-                        <button type="submit" class="promo_button">Find property</button>
-                    </form>
-                </div>
+      <div class="wrapper_promo">
+        <div class="wrapper_text">
+          <div class="text">
+            <div class="label">Find your dream place</div>
+            <!-- <h1 class="promo_header">Find house for your family in minutes</h1> -->
+            <!-- это не h1 смотри внимаетльн макет и поситай про использования h1 и тд -->
+            <p class="promo_header">Find house for your family in minutes</з>
+            <div class="promo_subheader">
+              <p>
+                Aenean sodales mauris quis tellus facilisis, vel mattis magna. Interdum curabitur eget aliquam elit in mauris purus.
+              </p>
+              <!-- за  <br /> уволена будешь сразу же, никогда не используй!!!! -->
             </div>
-            <div class="wrapper_img">
-                <img src="/src/img/IMAGE (1).png" alt="bg">
-            </div>
+            <form action="#" method="get" class="promo_form">
+              <span class="icon_search"
+                ><input name="search" placeholder="Search" type="search"
+              /></span>
+               <!-- never do input inside the span, redo this  -->
+              <button type="submit" class="promo_button">Find property</button>
+            </form>
+          </div>
         </div>
+        <div class="wrapper_img">
+          <img src="/src/img/IMAGE (1).png" alt="bg" />
+        </div>
+      </div>
     </div>
-    
-</body>
+  </body>
 </html>
