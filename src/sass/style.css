@@ -158,10 +158,9 @@ nav {
   justify-content: center;
 }
 
-.wrapper {
-  max-width: 1440px;
-}
 .wrapper_promo {
+  width: 100%;
+  max-width: 1440px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
