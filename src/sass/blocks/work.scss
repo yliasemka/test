@@ -1,0 +1,46 @@
+.work {
+    padding:0 80px 0 80px;
+    &_subheader {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 64px;
+        &_text{
+            font-size: 18px;
+            font-weight: 400;
+            text-align: left;
+            color: #2A2C1F;
+        }
+        &_img{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &_img{
+        margin-right: 21px;
+        height: 24px; 
+    }
+    &_item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 0.5px solid #E7E8E3;
+        padding: 49px;
+        border-radius: 10px;
+        width: 405px;
+    }
+}
+
+.item_title {
+    padding: 25px 0 15px 0;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: #2A2C1F;
+}
+
+.item_descr {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #65665C;
+}
