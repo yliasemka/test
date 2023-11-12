@@ -1,0 +1,23 @@
+.process {
+    padding-top: 125px;
+    padding-bottom: 130px;
+    padding-left: 80px;
+    &_title{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 28px;
+        padding-top: 15px;
+        color:#2A2C1F;
+    }
+    &_subheader{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color:#65665C;
+        padding-top: 15px;
+        padding-right: 25px;
+    }
+    &_item{
+        width: 288px;
+    }
+}

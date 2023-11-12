@@ -13,36 +13,46 @@ href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
 </head>
 <body>
     <header>
-        <div class="wrapper">
+        <div class="wrapper_header">
             <a href="#" class="header_logo">
-                <img src="/src/icons/logo.png" alt="logo">
+              <img src="/src/icons/logo.png" alt="logo" />
             </a>
             <nav>
-                    <ul class="menu">
-                        <li class="menu_item"><a href="#" class="menu_link">Home</a></li>
-                        <li class="menu_item"><a href="#require" class="menu_link">Properties</a></li>
-                        <li class="menu_item"><a href="#require" class="menu_link">About</a></li>
-                        <li class="menu_item"><a href="#" class="menu_link">Contact</a></li>
-                        <li class="menu_item"><a href="#" class="menu_link">Search</a></li>
-                    </ul>
+              <ul class="menu">
+                <li class="menu_item"><a href="#" class="menu_link">Home</a></li>
+                <li class="menu_item">
+                  <a href="#require" class="menu_link">Properties</a>
+                </li>
+                <li class="menu_item">
+                  <a href="#require" class="menu_link">About</a>
+                </li>
+                <li class="menu_item"><a href="#" class="menu_link">Contact</a></li>
+                <li><button class="menu_item">Search</button></li>
+              </ul>
+    
+              <button class="button_cart">Cart</button>
+              <button class="button_find">Find a property</button>
             </nav>
-            <button class="button_cart">Cart</button>
-            <button class="button_find">Find a property</button>
-        </div>
+          </div>
     </header>
+
     <div class="promo">
-        <div class="wrapper">
+        <div class="wrapper_promo">
             <div class="wrapper_text">
                 <div class="text">
                     <div class="label">Find your dream place</div>
-                    <h1 class="title">Find house for your family in minutes</h1>
-                    <div class="subtitle">Aenean sodales mauris quis tellus facilisis, 
-                    vel mattis magna. Interdum curabitur eget aliquam 
-                    elit in mauris <br>purus.</div>
-                    <form action="#" method="get" class="promo_form">
-                        <span class="icon_search"><input name="search" placeholder="Search" type="search"></span>
-                        <button type="submit" class="promo_button">Find property</button>
-                    </form>
+                    <p class="promo_header">Find house for your family in minutes</p>
+                        <div class="promo_subheader">
+                          <p>
+                            Aenean sodales mauris quis tellus facilisis, vel mattis magna. Interdum curabitur eget aliquam elit in mauris purus.
+                          </p>
+                        </div>
+                        <form action="#" method="get" class="promo_form">
+                            <span class="icon_search"
+                              ><input name="search" placeholder="Search" type="search"
+                            /></span>
+                            <button type="submit" class="promo_button">Find property</button>
+                          </form>
                 </div>
             </div>
             <div class="wrapper_img">
@@ -61,80 +71,82 @@ href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
                 <img src="/src/img/5.png" alt="" class="work_img">
             </div>
         </div>
-        <h2 class="work_title">How it works</h2>
-            <div class="work_subtitle">Nunc laoreet consequat nunc at consequat. 
-                Praesent aliquam mi id efficitur pellentesque.<br>
-                 Maecenas varius felis felis.</div>
-        <div class="work_wrapper">
-            <div class="work_wrapper_item">
+        <p class="title title_work">How it works</p>
+        <p class="subtitle subtitle_work">Nunc laoreet consequat nunc at consequat. 
+            Praesent aliquam mi id efficitur pellentesque.<br>
+             Maecenas varius felis felis.</p>
+        <div class="wrapper">
+            <div class="work_item">
                 <img src="/src/icons/hous.png" alt="house" class="item_img">
-                <div class="item_title">Find property</div>
-                <div class="item_descr">Odales mauris quis tellus facilisis, vel mattis magna interdum. 
-                    Curabitur eget aliquam elit. In mauris purus, auctor a eleifend non.</div>
+                <div class="item_title"><p>Find property</p></div>
+                <div class="item_descr"><p>Odales mauris quis tellus facilisis, vel mattis magna interdum. 
+                    Curabitur eget aliquam elit. In mauris purus, auctor a eleifend non.</p></div>
             </div>
-            <div class="work_wrapper_item">
+            <div class="work_item">
                 <img src="/src/icons/deal.png" alt="deal" class="item_img">
-                <div class="item_title">Make a deal</div>
-                <div class="item_descr">Pellentesque suscipit mauris. Nam dictum, erat a volutpat varius, 
-                    urna nisi sollicitudin orci, sagittis facilisis odio tortor ac mi.</div>
+                <div class="item_title"><p>Make a deal</p></div>
+                <div class="item_descr"><p>Pellentesque suscipit mauris. Nam dictum, erat a volutpat varius, 
+                    urna nisi sollicitudin orci, sagittis facilisis odio tortor ac mi.</p></div>
             </div>
-            <div class="work_wrapper_item">
+            <div class="work_item">
                 <img src="/src/icons/key.png" alt="key" class="item_img">
-                <div class="item_title">Get your keys</div>
-                <div class="item_descr">Nulla vel bibendum purus. Etiam tempus quam vel pulvinar rutrum. 
-                    Duis semper, metus vitae fermentum consequat.</div>
+                <div class="item_title"><p>Get your keys</p></div>
+                <div class="item_descr"><p>Nulla vel bibendum purus. Etiam tempus quam vel pulvinar rutrum. 
+                    Duis semper, metus vitae fermentum consequat.</p></div>
             </div> 
         </div>
     </div>
     <div class="house">
-        <div class="container">
             <div class="wrapper">
                 <div class="wrapper_house">
-                    <div class="label label_house">Comfort first</div>
-                    <div class="title title_house">The best houses for family comfort</div>
-                    <div class="subtitle subtitle_house"><p>
-                        Ectus ipsum faucibus justo, et semper quam nisl in nibh. 
-                        Proin sollicitudin, lorem non posuere blandit.
-                    </p></div>
-                        <button class="house_button">Explore properties</button>
-                 </div>
-                <div class="wrapper_img">
-                    <img src="/src/img/IMAGE2.png" alt="" class="house_img">
+                    <div class="wrapper_tt">
+                        <div class="label label_house">Comfort first</div>
+                        <div class="title title_house"><p>The best houses for family comfort</p></div>
+                        <div class="subtitle subtitle_house"><p>
+                            Ectus ipsum faucibus justo, et semper quam nisl in nibh. 
+                            Proin sollicitudin, lorem non posuere blandit.
+                        </p></div>
+                            <button class="house_button">Explore properties</button>
+                     </div>
+                     <div class="wrapper_img">
+                        <img src="/src/img/IMAGE2.png" alt="" class="house_img">
+                    </div>
                 </div>
             </div>
-        </div>
     </div>
     <div class="process">
             <div class="wrapper">
-                <div class="wrapper_img">
-                    <img src="/src/img/IMAGE3.png" alt="" class="house_img">
-                </div>
                 <div class="wrapper_process">
-                    <div class="label label_process">Quick and easy</div>
-                    <div class="title title_process">Fast forward process</div>
-                    <div class="subtitle subtitle_process">Ut vitae nisi eu nisi maximus condimentum ac id purus. 
-                        Duis sit amet mi arcu praesent nec felis nisl.</div>
+                    <div class="wrapper_img">
+                        <img src="/src/img/IMAGE3.png" alt="" class="house_img">
+                    </div>
                         <div class="wrapper_process_item">
-                            <div class="process_item">
-                                <img src="/src/icons/mess.png" alt="mess" class="process_img">
-                                <div class="process_title">Affordable prices</div>
-                                <div class="process_subheader"><p>
-                                    Lorem ipsum dolor sit amet, 
-                                    consectetur adipiscing elit. 
-                                    Suspendisse varius enim in eros.
-                                </p></div>
-                            </div>
-                            <div class="process_item">
-                                <img src="/src/icons/pap.png" alt="pap" class="process_img">
-                                <div class="process_title">Less paper work</div>
-                                <div class="process_subheader">Curabitur porta luctus semper donec eget lobortis leo ac finibus nisi.</div>
-                            </div>
+                            <div class="label label_process"><p>Quick and easy</p></div>
+                            <div class="title title_process"><p>Fast forward process</p></div>
+                            <div class="subtitle subtitle_process"><p>Ut vitae nisi eu nisi maximus condimentum ac id purus. 
+                                Duis sit amet mi arcu praesent nec felis nisl.</p></div>
+                            <div class="wrapper_process_subitem">
+                                <div class="process_item">
+                                    <img src="/src/icons/mess.png" alt="mess" class="process_img">
+                                    <div class="process_title"><p>Affordable prices</p></div>
+                                    <div class="process_subheader"><p>
+                                        Lorem ipsum dolor sit amet, 
+                                        consectetur adipiscing elit. 
+                                        Suspendisse varius enim in eros.
+                                    </p></div>
+                                </div>
+                                <div class="process_item">
+                                    <img src="/src/icons/pap.png" alt="pap" class="process_img">
+                                    <div class="process_title"><p>Less paper work</p></div>
+                                    <div class="process_subheader"><p>Less paper work</p></div>
+                                </div>
+                            </div> 
+                            <button class="house_button">Explore properties</button> 
                         </div>
-                        <button class="house_button">Explore properties</button>
                  </div>
             </div>
     </div>
-    <div class="area">
+    <!--<div class="area">
         <div class="area_header">
             <div class="label label_area">Properties</div>
             <div class="title title_area">Houses in your favorite area</div>
@@ -402,6 +414,6 @@ href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
 </body>
 </html>

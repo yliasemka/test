@@ -1,5 +1,8 @@
+@charset "UTF-8";
 * {
-    font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,
@@ -17,359 +20,110 @@ body {
   background-repeat: no-repeat;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+}
+
+p,
+button {
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+}
+
+button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+input {
+  border: none;
+}
+
 .container {
-    min-width: 1280px;
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
-header {
-    width: 1440px;
-    max-height: 74px;
-}
+@import 'blocks/title';
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/work';
+@import 'blocks/house';
+@import 'blocks/process';
 
-
-.header_logo{
-    margin: 20px 420px 0 80px;
-}
-
-.menu {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    margin-top: 25px;
-    &_item{
-        margin-right: 36px;
-        
-    }
-    &_item:nth-child(2)::after {
-        content: "\f078";
-        font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
-        font-weight: 700;
-        padding-left: 9px;
-    }
-    &_item:nth-child(5)::before {
-        content: "\f002";
-        font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
-        font-weight: 700;
-        padding-right: 7px;
-    }
-    &_link{
-        color: black;
-    }
-}
-
-.button_cart {
-    width: 130px;
-    height: 42px;
-    border-radius: 5px;
-    background-color: #fff;
-    border-color: #E7E8E3;
-    margin-right: 18px;
-    margin-top: 17px;
-    &::before{
-        content: "\f290";
-        font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
-        font-weight: 700;
-        padding-right: 8px;
-    }
-  
-}
-
-.button_find {
-    margin-right: 50px;
-    width: 200px;
-    height: 42px;
-    border: none;
-    background-color: #CF6F49;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 400;
-    text-align: center;
-    border-radius: 5px;
-    margin-top: 17px;
-}
-
-.promo {
-    
-    margin-top: 15px;
-    background-color: #E7E8E3;
-}
-
-
-.text {
-    margin: 175px 80px 155px 80px;
-    display: flex;
-    flex-direction: column;
-    width: 560px;
-}
-
-.label {
-    width: 171px;
-    height: 29px;
-    padding-top: 4px;
-    margin-bottom: 20px;
-    border-radius: 13px;
-    background-color: #dcdcdc;
-    font-size: 14px;
-    font-weight: 400;
-    text-align: center;
-    color: #2A2C1F;
-    &_house {
-        width: 107px;
-    }
-    &_process {
-        width: 107px;
-    }
-    &_area{
-        width: 92px;
-        display: block;
-        margin: 0 auto;
-    }
-    &_latest{
-        width: 52px;
-    }
-
-}
-
-.title {
-    font-size: 56px;
-    font-weight: 400;
-    text-align: left;
-    line-height: 67px;
-    &_house{
-        font-size: 48px;
-        font-weight: 700;
-    }
-    &_process{
-        font-size: 48px;
-        font-weight: 700;
-    }
-    &_area{
-        font-size: 48px;
-        font-weight: 700;
-        text-align: center;
-    }
-    &_location{
-        font-size: 48px;
-        font-weight: 700;
-        text-align: center;
-    }
-    &_priority{
-        font-size: 48px;
-        font-weight: 700;
-        text-align: center;
-        color:#fff;
-        padding-top: 20px;
-    }
-    &_customer{
-        font-size: 48px;
-        font-weight: 700;
-        text-align: center;
-    }
-    &_latest{
-        font-size: 48px;
-        font-weight: 700;
-    }
-}
-
-.subtitle{
-    margin-top: 15px;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: left;
-    color: #65665C;
-    &_house{
-        font-size: 18px;
-    }
-    &_location{
-       text-align: center;
-
-    }
-    &_priority{
-        font-size: 18px;
-        color:#fff;
-        display: block;
-        margin: 0 auto;
-        width: 765px;
-        text-align: center;
-        padding-top: 50px;
-        padding-bottom: 10px;
-    }
-    &_customer{
-        font-size: 18px;
-        text-align: center;
-        padding-bottom: 85px;
-    }
-    &_latest{
-        font-size: 18px;
-    }
-}
-
-.icon_search::before{
-    position: absolute;
-    content: "\f002";
-    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
-    font-weight: 700;
-    padding: 13px 5px 0 8px;
-}
-
-.promo_form {
-    margin-top: 25px;
-    input {
-        width: 310px;
-        height: 48px;
-        border-radius: 5px;
-        border: 1px;
-        background-color: #ffffff;
-        padding-left: 28px;
-    }
-}
-
-.promo_button {
-    width: 154px;
-    height: 50px;
-    border-radius: 5px;
-    border: 1px;
-    background-color: #CF6F49;
-    margin-left: 10px;
-    color: #fff;
-    &:hover{
-        border-color:#CF6F49;
-    }
-}
-
-.work {
-    width: 1280px;
-    margin-left: 80px;
-    &_title{
-        font-size: 48px;
-        font-weight: 700;
-        text-align: center;
-        padding-top: 120px;
-    }
-    &_subtitle{
-        font-size: 18px;
-        font-weight: 400;
-        text-align: center;
-        color: #65665C;
-        padding-top: 25px;
-    }
-    &_subheader {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 64px;
-        &_text{
-            font-size: 18px;
-            font-weight: 400;
-            text-align: left;
-            color: #2A2C1F;
-        }
-        &_img{
-            width: 728px;
-        }
-    }
-    &_img{
-        margin-right: 21px; 
-    }
-    &_wrapper{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 65px;
-        &_item{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border: 0.5px solid #E7E8E3;
-            padding: 49px;
-            border-radius: 10px;
-            width: 405px;
-            height: 291px;
-        }
-    }
-}
-
-.item_title {
-    margin: 25px 0 25px 0;
-    font-size: 24px;
-    font-weight: 700;
-    text-align: center;
-    color: #2A2C1F;
-}
-
-.item_descr {
-    font-size: 16px;
-    font-weight: 400;
-    text-align: center;
-    color: #65665C;
-}
-
-.house{
-    margin-top: 125px;
-    width: 1280px;
-    margin-left: 80px;
-    &_button {
-        margin-top: 30px;
-        width: 192px;
-        height: 50px;
-        font-size: 16px;
-        font-weight: 400;
-        color: #2A2C1F;
-        text-align: center;
-        border-radius: 5px;
-        border: 0.5px solid #E7E8E3;;
-        background-color: #fff;
-    }
-}
 
 .wrapper {
     display: flex;
     justify-content: space-between;
     width: 100%;
     max-width: 1440px;
+    margin: 0 auto;
     &_house{
-        padding-top: 140px;
-        width: 600px;
+        padding: 125px 80px 125px 80px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 49px;
+    }
+    &_tt{
+        padding: 140px 178px 110px 0;
+    }
+    &_img{
+        align-self: end;
     }
     &_process{
-        padding-left: 85px;
-        padding-top: 55px;
         padding-right: 80px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 49px;
         &_item{
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
             padding-top: 36px;
         }
+        &_subitem{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &_promo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
   
 
 
 }
 
-.process {
-    padding-top: 125px;
-    padding-bottom: 130px;
-    padding-left: 80px;
-    &_title{
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 28px;
-        padding-top: 15px;
-        color:#2A2C1F;
-    }
-    &_subheader{
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-        color:#65665C;
-        padding-top: 15px;
-        padding-right: 25px;
-    }
-    &_item{
-        width: 288px;
-    }
-}
 
-.area {
+/*.area {
     background-color: #E7E8E3;
     padding-top: 130px;
     padding-bottom: 170px;
@@ -551,4 +305,4 @@ header {
         border-radius: 10px; 
     }
   
-}
+}*/
