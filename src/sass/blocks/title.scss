@@ -16,7 +16,6 @@
         width: 107px;
     }
     &_area{
-        width: 92px;
         display: block;
         margin: 0 auto;
     }
@@ -43,8 +42,10 @@
     &_process{
         font-size: 48px;
         font-weight: 700;
+        text-align: left;
     }
     &_area{
+        padding-top: 15px;
         font-size: 48px;
         font-weight: 700;
         text-align: center;
@@ -69,6 +70,7 @@
     &_latest{
         font-size: 48px;
         font-weight: 700;
+        text-align: left;
     }
 }
 
@@ -82,6 +84,9 @@
     }
     &_house{
         font-size: 18px;
+        text-align: left;
+    }
+    &_process{
         text-align: left;
     }
     &_location{
@@ -105,5 +110,6 @@
     }
     &_latest{
         font-size: 18px;
+        text-align: left;
     }
 }

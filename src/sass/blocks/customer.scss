@@ -1,0 +1,47 @@
+.customer{
+    padding-top: 155px;
+    &_content{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 80px 160px 80px;
+    }
+    &_star{
+        display: flex;
+        justify-content: left;
+    }
+    &_item{
+        border: 0.5px solid #E7E8E3;
+        border-radius: 10px;
+        padding: 32px 41px 58px 32px ;
+        margin-right: 35px;
+    }
+    &_item:nth-child(3){
+        margin: 0;
+    }
+    &_subtitle{
+        padding-top: 25px;
+        font-size: 18px;
+        font-weight: 400;
+        padding-bottom: 15px;
+    }
+    &_footer{
+        display: flex;
+        justify-content: left;
+        &_text{
+            padding-left: 15px;
+        }
+    }
+    &_name{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    &_surname{
+        font-size: 16px;
+        font-weight: 400;
+        color:#65665C;
+    }
+}
+
+.img_footer{
+    width: 80px;
+}
