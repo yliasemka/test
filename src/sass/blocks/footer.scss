@@ -1,0 +1,35 @@
+.footer_content{
+    padding: 80px;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr 4fr;
+}
+
+.footer_subscribe{
+    padding-left: 128px;
+}
+
+.footer_form input {
+    border-radius: 5px;
+    border: 0.5px solid #E7E8E3;
+    background-color: #ffffff;
+    padding: 12px 46px 12px 5px;
+    font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands"
+}
+
+.footer_subtitle{
+    font-size: 16px;
+    font-weight: 400;
+    color:#65665C;
+}
+
+.footer_end {
+    display: flex;
+    justify-content: left;
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    color:#65665C;
+    &_subtitle{
+        padding-left: 15px;
+    }
+}

@@ -1,5 +1,8 @@
 .promo {
     background-color: #E7E8E3;
+    &_img{
+        height: 100%;
+    }
 }
 .promo_header {
     font-size: 56px;

@@ -47,7 +47,8 @@ h6 {
 }
 
 p,
-button {
+button,
+a {
   font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
 }
 
@@ -81,6 +82,9 @@ input {
 @import 'blocks/location';
 @import 'blocks/priority';
 @import 'blocks/customer';
+@import 'blocks/latest';
+@import 'blocks/footer';
+@import 'blocks/end';
 
 
 .wrapper {
@@ -97,9 +101,6 @@ input {
     }
     &_tt{
         padding: 140px 178px 110px 0;
-    }
-    &_img{
-        align-self: end;
     }
     &_process{
         display: grid;
@@ -120,67 +121,14 @@ input {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-  
-
-
-}
-
-
-.latest {
-    background-color: #E7E8E3;
-    padding: 130px 0 125px 0;
-    &_header{
-        padding: 0 80px 0 80px;
-        &_text{
-            width: 768px;
-        }
+    &_footer{
+      width: 100%;
+      max-width: 1440px;
+      margin: 0 auto;
     }
-    &_content{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 25px;
-        justify-content: space-between;
-        padding: 40px 80px 50px 80px;
+    &_end{
+      width: 100%;
+      max-width: 1440px;
+      margin: 0 auto;
     }
-    &_item{
-        background-color: #fff;
-        border-radius: 10px; 
-        &_hed{
-          display: flex;
-          justify-content: left;
-        }
-    }
-    &_descr{
-      padding: 25px 50px 27px 25px;
-    }
-    &_title{
-      font-size: 24px;
-      font-weight: 700;
-    }
-    &_subtitle{
-      font-size: 16px;
-      font-weight: 400;
-      color:#65665C;
-    }
-}
-
-.trends{
-  background-color: #FAE8E1;
-  border: none;
-  border-radius: 20px;
-  width: 20%;
-  text-align: center;
-  margin-bottom: 0;
-  height: 29px;
-}
-
-.date {
-  padding-left: 16px;
-  font-size: 14px;
-  font-weight: 400;
-  color:#65665C;
-}
-
-.img_latest{
-  width: 100%;
 }
