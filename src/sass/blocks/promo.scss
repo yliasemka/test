@@ -1,0 +1,61 @@
+.promo {
+    background-color: #E7E8E3;
+    &_img{
+        height: 100%;
+    }
+}
+.promo_header {
+    font-size: 56px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 67px;
+  }
+  
+  .promo_subheader {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    color: #65665c;
+  }
+
+
+.text {
+    margin: 175px 80px 155px 80px;
+    display: flex;
+    flex-direction: column;
+    width: 560px;
+}
+
+.icon_search::before{
+    position: absolute;
+    content: "\f002";
+    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+    font-weight: 700;
+    padding: 13px 5px 0 8px;
+}
+
+.promo_form {
+    margin-top: 25px;
+    input {
+        width: 310px;
+        height: 48px;
+        border-radius: 5px;
+        border: 1px;
+        background-color: #ffffff;
+        padding-left: 28px;
+    }
+}
+
+.promo_button {
+    width: 154px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px;
+    background-color: #CF6F49;
+    margin-left: 10px;
+    color: #fff;
+    &:hover{
+        border-color:#CF6F49;
+    }
+}

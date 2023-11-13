@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>test</title>
     <link rel="stylesheet" 
-href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
     integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="stylesheet" href="/src/css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="src/css/style.min.css">
@@ -13,40 +13,56 @@ href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
 </head>
 <body>
     <header>
-        <div class="wrapper">
+        <div class="wrapper_header">
             <a href="#" class="header_logo">
-                <img src="/src/icons/logo.png" alt="logo">
+              <img src="/src/icons/logo.png" alt="logo" />
             </a>
             <nav>
-                    <ul class="menu">
-                        <li class="menu_item"><a href="#" class="menu_link">Home</a></li>
-                        <li class="menu_item"><a href="#require" class="menu_link">Properties</a></li>
-                        <li class="menu_item"><a href="#require" class="menu_link">About</a></li>
-                        <li class="menu_item"><a href="#" class="menu_link">Contact</a></li>
-                        <li class="menu_item"><a href="#" class="menu_link">Search</a></li>
-                    </ul>
+              <ul class="menu">
+                <li class="menu_item"><a href="#" class="menu_link">Home</a></li>
+                <li class="menu_item">
+                  <a href="#require" class="menu_link">Properties</a>
+                  <img src="/src/icons/expand_more.svg" alt="" class="menu_icon">
+                </li>
+                <li class="menu_item">
+                  <a href="#require" class="menu_link">About</a>
+                </li>
+                <li class="menu_item"><a href="#" class="menu_link">Contact</a></li>
+                <li class="menu_item">
+                    <img src="/src/icons/search.svg" alt="" class="menu_iconn">
+                    <button class="menu_search">Search</button>
+                </li>
+              </ul>
+    
+              <button class="button_cart">
+                <img src="/src/icons/shopping_bag.svg" alt="" class="menu_cart">
+                Cart</button>
+              <button class="button_find">Find a property</button>
             </nav>
-            <button class="button_cart">Cart</button>
-            <button class="button_find">Find a property</button>
-        </div>
+          </div>
     </header>
+
     <div class="promo">
-        <div class="wrapper">
+        <div class="wrapper_promo">
             <div class="wrapper_text">
                 <div class="text">
                     <div class="label">Find your dream place</div>
-                    <h1 class="title">Find house for your family in minutes</h1>
-                    <div class="subtitle">Aenean sodales mauris quis tellus facilisis, 
-                    vel mattis magna. Interdum curabitur eget aliquam 
-                    elit in mauris <br>purus.</div>
-                    <form action="#" method="get" class="promo_form">
-                        <span class="icon_search"><input name="search" placeholder="Search" type="search"></span>
-                        <button type="submit" class="promo_button">Find property</button>
-                    </form>
+                    <p class="promo_header">Find house for your family in minutes</p>
+                        <div class="promo_subheader">
+                          <p>
+                            Aenean sodales mauris quis tellus facilisis, vel mattis magna. Interdum curabitur eget aliquam elit in mauris purus.
+                          </p>
+                        </div>
+                        <form action="#" method="get" class="promo_form">
+                            <span class="icon_search"
+                              ><input name="search" placeholder="Search" type="search"
+                            /></span>
+                            <button type="submit" class="promo_button">Find property</button>
+                          </form>
                 </div>
             </div>
             <div class="wrapper_img">
-                <img src="/src/img/IMAGE (1).png" alt="bg">
+                <img src="/src/img/IMAGE (1).png" alt="bg" class="promo_img">
             </div>
         </div>
     </div>
@@ -61,132 +77,134 @@ href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
                 <img src="/src/img/5.png" alt="" class="work_img">
             </div>
         </div>
-        <h2 class="work_title">How it works</h2>
-            <div class="work_subtitle">Nunc laoreet consequat nunc at consequat. 
-                Praesent aliquam mi id efficitur pellentesque.<br>
-                 Maecenas varius felis felis.</div>
-        <div class="work_wrapper">
-            <div class="work_wrapper_item">
+        <p class="title title_work">How it works</p>
+        <p class="subtitle subtitle_work">Nunc laoreet consequat nunc at consequat. 
+            Praesent aliquam mi id efficitur pellentesque.<br>
+             Maecenas varius felis felis.</p>
+        <div class="wrapper">
+            <div class="work_item">
                 <img src="/src/icons/hous.png" alt="house" class="item_img">
-                <div class="item_title">Find property</div>
-                <div class="item_descr">Odales mauris quis tellus facilisis, vel mattis magna interdum. 
-                    Curabitur eget aliquam elit. In mauris purus, auctor a eleifend non.</div>
+                <div class="item_title"><p>Find property</p></div>
+                <div class="item_descr"><p>Odales mauris quis tellus facilisis, vel mattis magna interdum. 
+                    Curabitur eget aliquam elit. In mauris purus, auctor a eleifend non.</p></div>
             </div>
-            <div class="work_wrapper_item">
+            <div class="work_item">
                 <img src="/src/icons/deal.png" alt="deal" class="item_img">
-                <div class="item_title">Make a deal</div>
-                <div class="item_descr">Pellentesque suscipit mauris. Nam dictum, erat a volutpat varius, 
-                    urna nisi sollicitudin orci, sagittis facilisis odio tortor ac mi.</div>
+                <div class="item_title"><p>Make a deal</p></div>
+                <div class="item_descr"><p>Pellentesque suscipit mauris. Nam dictum, erat a volutpat varius, 
+                    urna nisi sollicitudin orci, sagittis facilisis odio tortor ac mi.</p></div>
             </div>
-            <div class="work_wrapper_item">
+            <div class="work_item">
                 <img src="/src/icons/key.png" alt="key" class="item_img">
-                <div class="item_title">Get your keys</div>
-                <div class="item_descr">Nulla vel bibendum purus. Etiam tempus quam vel pulvinar rutrum. 
-                    Duis semper, metus vitae fermentum consequat.</div>
+                <div class="item_title"><p>Get your keys</p></div>
+                <div class="item_descr"><p>Nulla vel bibendum purus. Etiam tempus quam vel pulvinar rutrum. 
+                    Duis semper, metus vitae fermentum consequat.</p></div>
             </div> 
         </div>
     </div>
     <div class="house">
-        <div class="container">
             <div class="wrapper">
                 <div class="wrapper_house">
-                    <div class="label label_house">Comfort first</div>
-                    <div class="title title_house">The best houses for family comfort</div>
-                    <div class="subtitle subtitle_house"><p>
-                        Ectus ipsum faucibus justo, et semper quam nisl in nibh. 
-                        Proin sollicitudin, lorem non posuere blandit.
-                    </p></div>
-                        <button class="house_button">Explore properties</button>
-                 </div>
-                <div class="wrapper_img">
-                    <img src="/src/img/IMAGE2.png" alt="" class="house_img">
+                    <div class="wrapper_tt">
+                        <div class="label label_house">Comfort first</div>
+                        <div class="title title_house"><p>The best houses for family comfort</p></div>
+                        <div class="subtitle subtitle_house"><p>
+                            Ectus ipsum faucibus justo, et semper quam nisl in nibh. 
+                            Proin sollicitudin, lorem non posuere blandit.
+                        </p></div>
+                            <button class="house_button">Explore properties</button>
+                     </div>
+                     <div class="wrapper_img">
+                        <img src="/src/img/IMAGE2.png" alt="" class="house_img">
+                    </div>
                 </div>
             </div>
-        </div>
     </div>
     <div class="process">
             <div class="wrapper">
-                <div class="wrapper_img">
-                    <img src="/src/img/IMAGE3.png" alt="" class="house_img">
-                </div>
                 <div class="wrapper_process">
-                    <div class="label label_process">Quick and easy</div>
-                    <div class="title title_process">Fast forward process</div>
-                    <div class="subtitle subtitle_process">Ut vitae nisi eu nisi maximus condimentum ac id purus. 
-                        Duis sit amet mi arcu praesent nec felis nisl.</div>
+                    <div class="wrapper_img">
+                        <img src="/src/img/IMAGE3.png" alt="" class="house_img">
+                    </div>
                         <div class="wrapper_process_item">
-                            <div class="process_item">
-                                <img src="/src/icons/mess.png" alt="mess" class="process_img">
-                                <div class="process_title">Affordable prices</div>
-                                <div class="process_subheader"><p>
-                                    Lorem ipsum dolor sit amet, 
-                                    consectetur adipiscing elit. 
-                                    Suspendisse varius enim in eros.
-                                </p></div>
-                            </div>
-                            <div class="process_item">
-                                <img src="/src/icons/pap.png" alt="pap" class="process_img">
-                                <div class="process_title">Less paper work</div>
-                                <div class="process_subheader">Curabitur porta luctus semper donec eget lobortis leo ac finibus nisi.</div>
-                            </div>
+                            <div class="label label_process"><p>Quick and easy</p></div>
+                            <div class="title title_process"><p>Fast forward process</p></div>
+                            <div class="subtitle subtitle_process"><p>Ut vitae nisi eu nisi maximus condimentum ac id purus. 
+                                Duis sit amet mi arcu praesent nec felis nisl.</p></div>
+                            <div class="wrapper_process_subitem">
+                                <div class="process_item">
+                                    <img src="/src/icons/mess.png" alt="mess" class="process_img">
+                                    <div class="process_title"><p>Affordable prices</p></div>
+                                    <div class="process_subheader"><p>
+                                        Lorem ipsum dolor sit amet, 
+                                        consectetur adipiscing elit. 
+                                        Suspendisse varius enim in eros.
+                                    </p></div>
+                                </div>
+                                <div class="process_item">
+                                    <img src="/src/icons/pap.png" alt="pap" class="process_img">
+                                    <div class="process_title"><p>Less paper work</p></div>
+                                    <div class="process_subheader"><p>Less paper work</p></div>
+                                </div>
+                            </div> 
+                            <button class="house_button">Explore properties</button> 
                         </div>
-                        <button class="house_button">Explore properties</button>
                  </div>
             </div>
     </div>
     <div class="area">
         <div class="area_header">
             <div class="label label_area">Properties</div>
-            <div class="title title_area">Houses in your favorite area</div>
+            <div class="title title_area"><p>Houses in your favorite area</p></div>
         </div>
         <div class="wrapper">
             <div class="area_content">
                 <div class="area_item">
                     <img src="/src/img/first.png" alt="first">
                     <div class="area_text">
-                        <div class="area_title">Cozy studio in Los Angeles</div>
-                        <div class="area_subtitle">$ 1,200.00 USD</div>
-                        <div class="area_geo">2263 Southlea, Los Angeles</div>
+                        <div class="area_title"><p>Cozy studio in Los Angeles</p></div>
+                        <div class="area_subtitle"><p>$ 1,200.00 USD</p></div>
+                        <div class="area_geo"><p>2263 Southlea, Los Angeles</p></div>
                     </div>
                 </div>
                 <div class="area_item">
                     <img src="/src/img/first.png" alt="first">
                     <div class="area_text">
-                        <div class="area_title">Cozy studio in Los Angeles</div>
-                        <div class="area_subtitle">$ 1,200.00 USD</div>
-                        <div class="area_geo">2263 Southlea, Los Angeles</div>
+                        <div class="area_title"><p>Cozy studio in Los Angeles</p></div>
+                        <div class="area_subtitle"><p>$ 1,200.00 USD</p></div>
+                        <div class="area_geo"><p>2263 Southlea, Los Angeles</p></div>
                     </div>
                 </div>
                 <div class="area_item">
                     <img src="/src/img/first.png" alt="first">
                     <div class="area_text">
-                        <div class="area_title">Cozy studio in Los Angeles</div>
-                        <div class="area_subtitle">$ 1,200.00 USD</div>
-                        <div class="area_geo">2263 Southlea, Los Angeles</div>
+                        <div class="area_title"><p>Cozy studio in Los Angeles</p></div>
+                        <div class="area_subtitle"><p>$ 1,200.00 USD</p></div>
+                        <div class="area_geo"><p>2263 Southlea, Los Angeles</p></div>
                     </div>
                 </div>
                 <div class="area_item">
                     <img src="/src/img/first.png" alt="first">
                     <div class="area_text">
-                        <div class="area_title">Cozy studio in Los Angeles</div>
-                        <div class="area_subtitle">$ 1,200.00 USD</div>
-                        <div class="area_geo">2263 Southlea, Los Angeles</div>
+                        <div class="area_title"><p>Cozy studio in Los Angeles</p></div>
+                        <div class="area_subtitle"><p>$ 1,200.00 USD</p></div>
+                        <div class="area_geo"><p>2263 Southlea, Los Angeles</p></div>
                     </div>
                 </div>
                 <div class="area_item">
                     <img src="/src/img/first.png" alt="first">
                     <div class="area_text">
-                        <div class="area_title">Cozy studio in Los Angeles</div>
-                        <div class="area_subtitle">$ 1,200.00 USD</div>
-                        <div class="area_geo">2263 Southlea, Los Angeles</div>
+                        <div class="area_title"><p>Cozy studio in Los Angeles</p></div>
+                        <div class="area_subtitle"><p>$ 1,200.00 USD</p></div>
+                        <div class="area_geo"><p>2263 Southlea, Los Angeles</p></div>
                     </div>
                 </div>
                 <div class="area_item">
                     <img src="/src/img/first.png" alt="first">
                     <div class="area_text">
-                        <div class="area_title">Cozy studio in Los Angeles</div>
-                        <div class="area_subtitle">$ 1,200.00 USD</div>
-                        <div class="area_geo">2263 Southlea, Los Angeles</div>
+                        <div class="area_title"><p>Cozy studio in Los Angeles</p></div>
+                        <div class="area_subtitle"><p>$ 1,200.00 USD</p></div>
+                        <div class="area_geo"><p>2263 Southlea, Los Angeles</p></div>
                     </div>
                 </div>
             </div>
@@ -195,7 +213,7 @@ href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
     </div>
     <div class="location">
         <div class="location_header">
-            <div class="title title_location">Location</div>
+            <div class="title title_location"><p>Location</p></div>
             <div class="subtitle subtitle_location"><p>
                 Nunc mi ante, fringilla eget iaculis et, maximus vel purus integer 
                 lacus urna, aliquet non nisl sit amet.
@@ -205,38 +223,38 @@ href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
             <div class="location_content">
                 <div class="location_item">
                     <div class="location_text">
-                        <div class="location_title">San Francisco, CA</div>
-                        <div class="location_subtitle">View Properties</div>
+                        <div class="location_title"><p>San Francisco, CA</p></div>
+                        <div class="location_subtitle"><p>View Properties</p></div>
                     </div>
                 </div>
                 <div class="location_item">
                     <div class="location_text">
-                        <div class="location_title">San Francisco, CA</div>
-                        <div class="location_subtitle">View Properties</div>
+                        <div class="location_title"><p>San Francisco, CA</p></div>
+                        <div class="location_subtitle"><p>View Properties</p></div>
                     </div>
                 </div>
                 <div class="location_item">
                     <div class="location_text">
-                        <div class="location_title">San Francisco, CA</div>
-                        <div class="location_subtitle">View Properties</div>
+                        <div class="location_title"><p>San Francisco, CA</p></div>
+                        <div class="location_subtitle"><p>View Properties</p></div>
                     </div>
                 </div>
                 <div class="location_item">
                     <div class="location_text">
-                        <div class="location_title">San Francisco, CA</div>
-                        <div class="location_subtitle">View Properties</div>
+                        <div class="location_title"><p>San Francisco, CA</p></div>
+                        <div class="location_subtitle"><p>View Properties</p></div>
                     </div>
                 </div>
                 <div class="location_item">
                     <div class="location_text">
-                        <div class="location_title">San Francisco, CA</div>
-                        <div class="location_subtitle">View Properties</div>
+                        <div class="location_title"><p>San Francisco, CA</p></div>
+                        <div class="location_subtitle"><p>View Properties</p></div>
                     </div>
                 </div>
                 <div class="location_item">
                     <div class="location_text">
-                        <div class="location_title">San Francisco, CA</div>
-                        <div class="location_subtitle">View Properties</div>
+                        <div class="location_title"><p>San Francisco, CA</p></div>
+                        <div class="location_subtitle"><p>View Properties</p></div>
                     </div>
                 </div>
             </div>
@@ -245,7 +263,6 @@ href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
     </div>
     <div class="priority">
         <div class="wrapper">
-            <div class="container">
                 <div class="priority_content">
                     <img src="/src/icons/Frame.png" alt="fr" class="priority_img">
                     <div class="title title_priority">Families are our priority</div>
@@ -255,12 +272,11 @@ href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
                     </p></div>
                     <button class="button_priority">Get started</button>
                 </div>
-            </div>
         </div>
     </div>
     <div class="customer">
         <div class="customer_header">
-            <div class="title title_customer">What customers say</div>
+            <div class="title title_customer"><p>What customers say</p></div>
             <div class="subtitle subtitle_customer"><p>
                 Faucibus orci luctus et ultrices posuere cubilia curae.
             </p></div>
@@ -286,8 +302,8 @@ href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
                     <div class="customer_footer">
                         <img src="/src/img/men.png" alt="men" class="img_footer">
                         <div class="customer_footer_text">
-                            <div class="customer_name">Michael Webb</div>
-                            <div class="customer_surname">Customer</div>
+                            <div class="customer_name"><p>Michael Webb</p></div>
+                            <div class="customer_surname"><p>Customer</p></div>
                         </div>
                     </div>
                 </div>
@@ -310,8 +326,8 @@ href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
                     <div class="customer_footer">
                         <img src="/src/img/men.png" alt="men" class="img_footer">
                         <div class="customer_footer_text">
-                            <div class="customer_name">Michael Webb</div>
-                            <div class="customer_surname">Customer</div>
+                            <div class="customer_name"><p>Michael Webb</p></div>
+                            <div class="customer_surname"><p>Customer</p></div>
                         </div>
                     </div>
                 </div>
@@ -334,8 +350,8 @@ href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
                     <div class="customer_footer">
                         <img src="/src/img/men.png" alt="men" class="img_footer">
                         <div class="customer_footer_text">
-                            <div class="customer_name">Michael Webb</div>
-                            <div class="customer_surname">Customer</div>
+                            <div class="customer_name"><p>Michael Webb</p></div>
+                            <div class="customer_surname"><p>Customer</p></div>
                         </div>
                     </div>
                 </div>
@@ -345,8 +361,8 @@ href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
     <div class="latest">
         <div class="latest_header">
             <div class="latest_header_text">
-                <div class="label label_latest">Blog</div>
-                <div class="title title_latest">Latest posts</div>
+                <div class="label label_latest"><p>Blog</p></div>
+                <div class="title title_latest"><p>Latest posts</p></div>
                 <div class="subtitle subtitle_latest"><p>
                     Vestibulum ante ipsum primis in faucibus orci luctus et ultrices 
                     posuere cubilia curae. Praesent efficitur nibh massa morbi sagittis 
@@ -355,50 +371,117 @@ href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
             </div>
         </div>
         <div class="wrapper">
-            <div class="container">
                 <div class="latest_content">
                     <div class="latest_item">
-                        <img src="/src/img/first.png" alt="first">
-                        <div class="latest_item_hed">
-                            <div class="trends">Trends</div>
-                            <div class="date">May 10, 2022</div>
+                        <img src="/src/img/first.png" alt="first" class="img_latest">
+                        <div class="latest_descr">
+                            <div class="latest_item_hed">
+                                <p class="trends">Trends</p>
+                                <div class="date"><p>May 10, 2022</p></div>
+                            </div>
+                            <div class="latest_title"><p>The 9 best homes in New York</p></div>
+                            <div class="latest_subtitle"><p>
+                                Integer tincidunt rutrum faucibus. 
+                                Proin sit amet varius arcu. 
+                                Aliquam vel leo augue donec.
+                            </p></div>
+                            <div class="latest_item_end"><p>Read more</p></div>
                         </div>
-                        <div class="latest_title">The 9 best homes in New York</div>
-                        <div class="latest_subtitle"><p>
-                            Integer tincidunt rutrum faucibus. 
-                            Proin sit amet varius arcu. 
-                            Aliquam vel leo augue donec.
-                        </p></div>
-                        <div class="latest_item_end">Read more</div>
                     </div>
                     <div class="latest_item">
-                        <img src="/src/img/first.png" alt="first">
-                        <div class="latest_item_hed">
-                            <div class="trends">Trends</div>
-                            <div class="date">May 10, 2022</div>
+                        <img src="/src/img/first.png" alt="first" class="img_latest">
+                        <div class="latest_descr">
+                            <div class="latest_item_hed">
+                                <p class="trends">Trends</p>
+                                <div class="date"><p>May 10, 2022</p></div>
+                            </div>
+                            <div class="latest_title"><p>The 9 best homes in New York</p></div>
+                            <div class="latest_subtitle"><p>
+                                Integer tincidunt rutrum faucibus. 
+                                Proin sit amet varius arcu. 
+                                Aliquam vel leo augue donec.
+                            </p></div>
+                            <div class="latest_item_end"><p>Read more</p></div>
                         </div>
-                        <div class="latest_title">The 9 best homes in New York</div>
-                        <div class="latest_subtitle"><p>
-                            Integer tincidunt rutrum faucibus. 
-                            Proin sit amet varius arcu. 
-                            Aliquam vel leo augue donec.
-                        </p></div>
-                        <div class="latest_item_end">Read more</div>
                     </div>
                     <div class="latest_item">
-                        <img src="/src/img/first.png" alt="first">
-                        <div class="latest_item_hed">
-                            <div class="trends">Trends</div>
-                            <div class="date">May 10, 2022</div>
+                        <img src="/src/img/first.png" alt="first" class="img_latest">
+                        <div class="latest_descr">
+                            <div class="latest_item_hed">
+                                <p class="trends">Trends</p>
+                                <div class="date"><p>May 10, 2022</p></div>
+                            </div>
+                            <div class="latest_title"><p>The 9 best homes in New York</p></div>
+                            <div class="latest_subtitle"><p>
+                                Integer tincidunt rutrum faucibus. 
+                                Proin sit amet varius arcu. 
+                                Aliquam vel leo augue donec.
+                            </p></div>
+                            <div class="latest_item_end"><p>Read more</p></div>
                         </div>
-                        <div class="latest_title">The 9 best homes in New York</div>
-                        <div class="latest_subtitle"><p>
-                            Integer tincidunt rutrum faucibus. 
-                            Proin sit amet varius arcu. 
-                            Aliquam vel leo augue donec.
-                        </p></div>
-                        <div class="latest_item_end">Read more</div>
                     </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="wrapper_footer">
+            <div class="footer_content">
+                <img src="/src/icons/logo.png" alt="ff" class="footer_img">
+                <div class="footer_colom_one">
+                    <p class="footer_text">Pages</p>
+                    <p class="footer_text">Home</p>
+                    <p class="footer_text">About</p>
+                    <p class="footer_text">Blog</p>
+                    <p class="footer_text">Agents</p>
+                    <p class="footer_text">Contact</p>
+                    <p class="footer_text">FAQs</p>
+                    <p class="footer_text">Properties</p>
+                </div>
+                <div class="footer_colom_two">
+                    <p class="footer_text">CMS Pages</p>
+                    <p class="footer_text">Property</p>
+                    <p class="footer_text">Property Single</p>
+                    <p class="footer_text">Blog Categories</p>
+                    <p class="footer_text">Blog Single</p>
+                    <p class="footer_text">Agent Single</p>
+                </div>
+                <div class="footer_colom_three">
+                    <p class="footer_text">Utility Pages</p>
+                    <p class="footer_text">Style Guide</p>
+                    <p class="footer_text">Changelog</p>
+                    <p class="footer_text">Licenses</p>
+                    <p class="footer_text">404</p>
+                    <p class="footer_text">Password</p>
+                    <p class="footer_text">Search</p>
+                </div>
+                <div class="footer_subscribe">
+                    <div class="footer_title"><p>Subscribe</p></div>
+                    <div class="footer_subtitle"><p>Join our newsletter to stay up to date 
+                    on features and releases.</p></div>
+                    <form action="#" method="get" class="footer_form">
+                       <input name="search" placeholder="Enter your E-mail" type="search"/>
+                       <button type="submit" class="promo_button">Subscribe</button>
+                    </form>
+                    <div class="footer_end">
+                        <p>By subscribing you agree to with our</p>
+                        <p class="footer_end_subtitle">Privacy Policy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="end">
+        <div class="wrapper_end">
+            <div class="end_content">
+                <div class="end_text">
+                    <p>© Realco by</p>
+                    <div class="end_textt"><p>Minimal Square</p></div>
+                </div>
+                <div class="end_icons">
+                    <img src="/src/icons/face.png" alt="facebook" class="end_icon">
+                    <img src="/src/icons/inst.png" alt="inst" class="end_icon">
+                    <img src="/src/icons/twit.png" alt="twit" class="end_icon">
+                    <img src="/src/icons/lin.png" alt="lin" class="end_icon">
                 </div>
             </div>
         </div>

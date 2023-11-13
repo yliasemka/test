@@ -1,0 +1,26 @@
+.end_text{
+    display: flex;
+    justify-content: left;
+    height: 24px;
+}
+
+.end_icons{
+    display: flex;
+    justify-content: right;
+    height: 24px;
+}
+
+.end_textt{
+    padding-left: 15px;
+}
+
+.end_icon{
+    margin-left: 10px;
+}
+
+.end_content{
+    padding: 27px 145px 32px 145px;
+    background-color: #F5F5F2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
